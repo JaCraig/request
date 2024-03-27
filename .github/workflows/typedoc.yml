@@ -25,7 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npx typedoc src/Logger.ts --readme ./README.md --out ./docs --commentStyle all
+    - run: npx typedoc src/Request.ts --readme ./README.md --out ./docs --commentStyle all
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
