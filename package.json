@@ -1,0 +1,91 @@
+{
+  "name": "@jacraig/request",
+  "version": "1.0.0",
+  "description": "Wrapper around fetch that adds functionality including caching, retry, and timeouts.",
+  "main": "lib/Request.cjs.js",
+  "module": "lib/Request.esm.js",
+  "browser": "lib/Request.umd.min.js",
+  "types": "lib/declarations/Request.d.ts",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./lib/Request.esm.js",
+        "types": "./lib/declarations/Request.d.ts"
+      },
+      "require": {
+        "default": "./lib/Request.cjs.js",
+        "types": "./lib/declarations/Request.d.ts"
+      }
+    },
+    "./Logger.umd.js": "./lib/Request.umd.js",
+    "./Logger.umd.min.js": "./lib/Request.umd.min.js"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "",
+    "pack": "npm pack",
+    "prepublish": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaCraig/request.git"
+  },
+  "keywords": [
+    "fetch",
+    "http",
+    "ajax",
+    "request",
+    "response",
+    "utility",
+    "utilities"
+  ],
+  "author": "James Craig",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/JaCraig/request/issues"
+  },
+  "homepage": "https://github.com/JaCraig/request#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.0.2",
+    "rollup": "^4.9.4",
+    "semantic-release": "^23.0.0",
+    "tslib": "^2.6.2",
+    "typedoc": "^0.25.7",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@jacraig/woodchuck": "^1.1.0"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true,
+          "tarballDir": "dist"
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "assets": "dist/*.tgz"
+        }
+      ],
+      "@semantic-release/git"
+    ]
+  }
+}
