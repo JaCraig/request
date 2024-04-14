@@ -9,6 +9,7 @@ export default [
         file: 'lib/Request.cjs.js', // CommonJS format for Node.js
         format: 'cjs',
         exports: 'named',
+        sourcemap: true,
         globals: {
           "@jacraig/woodchuck": "woodchuck"
         }
@@ -16,11 +17,13 @@ export default [
       {
         file: 'lib/Request.esm.js', // ES module format for modern browsers and bundlers
         format: 'esm',
+        sourcemap: true,
         globals: {
           "@jacraig/woodchuck": "woodchuck"
         }
       },
     ],
+    external: ['@jacraig/woodchuck'],
     plugins: [typescript()],
   },
   {
@@ -30,10 +33,12 @@ export default [
       format: 'umd',
       name: 'request', // Global variable name
       exports: 'named',
+      sourcemap: true,
       globals: {
         "@jacraig/woodchuck": "woodchuck"
       }
     },
+    external: ['@jacraig/woodchuck'],
     plugins: [typescript()],
   },
   {
@@ -43,10 +48,12 @@ export default [
       format: 'umd',
       name: 'request', // Global variable name
       exports: 'named',
+      sourcemap: true,
       globals: {
         "@jacraig/woodchuck": "woodchuck"
       }
     },
+    external: ['@jacraig/woodchuck'],
     plugins: [typescript(),terser()],
   },
 ];
