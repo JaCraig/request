@@ -1,5 +1,7 @@
 # @jacraig/request
 
+[![NPM Publish](https://github.com/JaCraig/request/actions/workflows/node-publish.yml/badge.svg)](https://github.com/JaCraig/request/actions/workflows/node-publish.yml)
+
 `@jacraig/request` is a powerful yet lightweight library designed to simplify HTTP requests using the native `fetch` API while adding functionality such as caching, retry logic, and timeouts. It aims to provide developers with a convenient and flexible solution for handling HTTP requests in JavaScript and TypeScript applications.
 
 ## Features
