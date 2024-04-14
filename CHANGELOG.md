@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/JaCraig/request/compare/v1.0.3...v1.0.4) (2024-04-14)
+
+
+### Bug Fixes
+
+* Package updates ([557e1d6](https://github.com/JaCraig/request/commit/557e1d67d2ddf6e83a0a53e08e3542694fda1e5c))
+
 ## [1.0.3](https://github.com/JaCraig/request/compare/v1.0.2...v1.0.3) (2024-04-08)
 
 
