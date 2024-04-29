@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/JaCraig/request/compare/v1.0.6...v1.0.7) (2024-04-29)
+
+
+### Bug Fixes
+
+* bump rollup from 4.16.1 to 4.17.1 ([d7bb5e5](https://github.com/JaCraig/request/commit/d7bb5e510a06f488fce7c15fbf5cd3f2072105fc))
+
 ## [1.0.6](https://github.com/JaCraig/request/compare/v1.0.5...v1.0.6) (2024-04-22)
 
 
