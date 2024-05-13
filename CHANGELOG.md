@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/JaCraig/request/compare/v1.0.8...v1.0.9) (2024-05-13)
+
+
+### Bug Fixes
+
+* bump semantic-release from 23.0.8 to 23.1.1 ([1313583](https://github.com/JaCraig/request/commit/1313583b36195e08d56f7075bd1ea6e8f076d34b))
+
 ## [1.0.8](https://github.com/JaCraig/request/compare/v1.0.7...v1.0.8) (2024-05-06)
 
 
