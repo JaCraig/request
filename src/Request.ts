@@ -1,10 +1,23 @@
-import { Cache, CacheEntryOptions, StorageProvider, IndexedDbStorageProvider } from "./Cache";
+import { Cache } from "./Cache";
+import { CacheProvider } from "./CacheProvider";
+import { IndexedDbStorageProvider } from "./IndexedDbStorageProvider";
+import { StorageProvider } from "./StorageProvider";
+import { CacheEntryOptions } from "./CacheEntryOptions";
 import { Logger } from "@jacraig/woodchuck";
+import { InMemoryStorageProvider } from "./InMemoryStorageProvider";
 
 // Cancellation token
 class CancellationToken {
     // Indicates whether the request is cancelled (default: false)
     canceled: boolean = false;
+}
+
+// Default cache names
+enum CacheNames {
+    // The default cache (IndexedDB)
+    Default = "Default",
+    // The in-memory cache
+    InMemory = "InMemory"
 }
 
 // Authentication provider interface (used to authenticate requests)
@@ -24,6 +37,8 @@ interface AuthenticationProvider {
 interface RequestOptions {
     // Authentication provider (default: null)
     authenticationProvider?: AuthenticationProvider;
+    // Cache name (default: "Default")
+    cache?: CacheNames | string;
     // Cache key (default: url + JSON.stringify(data))
     cacheKey?: string;
     // Request cancellation token (default: null)
@@ -74,6 +89,7 @@ class Request {
         error: (reason) => { Logger.error("Request error from " + this.options.url + ":", reason) },
         retry: (attempt) => { Logger.debug("Request retry on " + this.options.url + ":", { "attempt": attempt }) },
         storageMode: StorageMode.NetworkFirst,
+        cache: CacheNames.Default,
         cacheKey: "",
         timeout: 60000,
         retryAttempts: 3,
@@ -86,6 +102,8 @@ class Request {
     // Constructor
     // options: The request options
     constructor(options: RequestOptions) {
+        CacheProvider.configure(CacheNames.Default, new IndexedDbStorageProvider());
+        CacheProvider.configure(CacheNames.InMemory, new InMemoryStorageProvider());
         this.options = { ...this.options, ...options };
     }
 
@@ -217,6 +235,15 @@ class Request {
         return this;
     }
 
+    // Sets the cache to use for the request
+    // cacheName: The cache name
+    // cache: The cache to use (default: IndexedDB)
+    public withCache(cacheName: CacheNames | string, cache: StorageProvider = new IndexedDbStorageProvider()): this {
+        CacheProvider.configure(cacheName, cache);
+        this.options.cache = cacheName;
+        return this;
+    }
+
     // Sets the cache key for the request
     // cacheKey: The cache key
     public withCacheKey(cacheKey: string): this {
@@ -263,9 +290,10 @@ class Request {
     // success or error functions if they exist.
     // Returns the parsed response.
     public async send(): Promise<any> {
-        const { authenticationProvider, method, url, data, headers, credentials, serializer, parser, success, error, storageMode, cacheKey, timeout, retryAttempts, retryDelay, retry, cancellationToken } = this.options;
+        const { authenticationProvider, method, url, data, headers, credentials, serializer, parser, success, error, storageMode, cache, cacheKey, timeout, retryAttempts, retryDelay, retry, cancellationToken } = this.options;
         const abortController = new AbortController();
         this.abortController = abortController;
+        let cacheUsing = CacheProvider.getProvider(cache);
 
         // Retry-related variables
         let attempts = 0;
@@ -277,19 +305,16 @@ class Request {
         let retryMethod = retry || ((attempt: number) => { Logger.debug("Request retry on " + url + ":", { "attempt": attempt }); });
 
         const sendRequest = async (): Promise<any> => {
-            if (storageMode === StorageMode.StorageFirst || storageMode === StorageMode.StorageAndUpdate) {
-                const cachedValue = await Cache.get(cacheKey || "");
+            if (storageMode === StorageMode.StorageAndUpdate) {
+                const cachedValue = await cacheUsing.get(cacheKey || "");
                 if (cachedValue !== undefined) {
                     successMethod(cachedValue);
-                    if (storageMode === StorageMode.StorageFirst) {
-                        return cachedValue;
-                    }
                 }
             }
 
             if (!navigator.onLine) {
                 if (storageMode === StorageMode.NetworkFirst) {
-                    const cachedValue = await Cache.get(cacheKey || "");
+                    const cachedValue = await cacheUsing.get(cacheKey || "");
                     if (cachedValue !== undefined) {
                         successMethod(cachedValue);
                         return cachedValue;
@@ -322,7 +347,7 @@ class Request {
                     successMethod(parsedResponse);
 
                     if (storageMode !== StorageMode.NetworkOnly) {
-                        await Cache.set(cacheKey || "", parsedResponse);
+                        await cacheUsing.set(cacheKey || "", parsedResponse);
                     }
 
                     return parsedResponse;
@@ -336,12 +361,19 @@ class Request {
             }
             if (attempts < (retryAttempts|| 0)) {
                 ++attempts;
+                if (storageMode !== StorageMode.NetworkOnly) {
+                    cacheUsing.remove(cacheKey || "");
+                }
                 await new Promise(resolve => setTimeout(resolve, retryDelay)); // Delay before retrying
                 retryMethod(attempts);
                 return sendRequest(); // Retry the request
             }
             errorMethod(lastError);
             return Promise.reject(lastError);
+        }
+        
+        if (storageMode === StorageMode.StorageFirst) {
+            return cacheUsing.getOrCreate(cacheKey || "", sendRequest);
         }
         return sendRequest();
     }
@@ -372,4 +404,4 @@ enum StorageMode {
     StorageAndUpdate = 3
 }
 
-export { CancellationToken, AuthenticationProvider, RequestOptions, Request, StorageMode, Cache, CacheEntryOptions, StorageProvider, IndexedDbStorageProvider };
+export { CancellationToken, AuthenticationProvider, RequestOptions, Request, StorageMode, Cache, CacheEntryOptions, StorageProvider, IndexedDbStorageProvider, InMemoryStorageProvider, CacheNames };
