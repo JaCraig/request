@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/JaCraig/request/compare/v1.0.9...v1.1.0) (2024-05-16)
+
+
+### Features
+
+* Trying to fix tests ([83cd04c](https://github.com/JaCraig/request/commit/83cd04c4b1832f6c710ad2ef3002109235226427))
+
 ## [1.0.9](https://github.com/JaCraig/request/compare/v1.0.8...v1.0.9) (2024-05-13)
 
 
