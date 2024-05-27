@@ -1,3 +1,13 @@
+## [1.1.2](https://github.com/JaCraig/request/compare/v1.1.1...v1.1.2) (2024-05-27)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 10.0.4 to 10.0.5 ([f13821e](https://github.com/JaCraig/request/commit/f13821e68ce6880522c4923363ac4d51c71e44d7))
+* bump fake-indexeddb from 5.0.2 to 6.0.0 ([8cf1fc9](https://github.com/JaCraig/request/commit/8cf1fc99fc4141c695944fa5cd63474d13aaa323))
+* bump rollup from 4.17.2 to 4.18.0 ([7d8865d](https://github.com/JaCraig/request/commit/7d8865dd724295a5401023546c690b641b04888b))
+* bump ts-jest from 29.1.2 to 29.1.3 ([52eb07c](https://github.com/JaCraig/request/commit/52eb07cdb6191c6c1ea39bb29d4852ef35532e67))
+
 ## [1.1.1](https://github.com/JaCraig/request/compare/v1.1.0...v1.1.1) (2024-05-20)
 
 
