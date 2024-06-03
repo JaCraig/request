@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/JaCraig/request/compare/v1.1.2...v1.1.3) (2024-06-03)
+
+
+### Bug Fixes
+
+* bump semantic-release from 23.1.1 to 24.0.0 ([f9cb2df](https://github.com/JaCraig/request/commit/f9cb2df238a7e398419955e2c94281228c553886))
+* bump ts-jest from 29.1.3 to 29.1.4 ([8cc3a41](https://github.com/JaCraig/request/commit/8cc3a419f0769de42d904fef70e20fa0d52dfd4c))
+
 ## [1.1.2](https://github.com/JaCraig/request/compare/v1.1.1...v1.1.2) (2024-05-27)
 
 
