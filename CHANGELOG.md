@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/JaCraig/request/compare/v1.1.5...v1.1.6) (2024-06-17)
+
+
+### Bug Fixes
+
+* bump braces from 3.0.2 to 3.0.3 in the npm_and_yarn group ([8dbc1c7](https://github.com/JaCraig/request/commit/8dbc1c7dc6555148d192e9f704dc83868e984392))
+
 ## [1.1.5](https://github.com/JaCraig/request/compare/v1.1.4...v1.1.5) (2024-06-17)
 
 
