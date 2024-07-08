@@ -1,3 +1,11 @@
+## [1.1.9](https://github.com/JaCraig/request/compare/v1.1.8...v1.1.9) (2024-07-08)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 10.0.6 to 10.0.7 ([adcc518](https://github.com/JaCraig/request/commit/adcc518b844f66643f8b27eeb6e6f2673cff71b2))
+* bump typescript from 5.5.2 to 5.5.3 ([a66cd08](https://github.com/JaCraig/request/commit/a66cd08cfe6b6d21c7c541ebb7276c0bb941f692))
+
 ## [1.1.8](https://github.com/JaCraig/request/compare/v1.1.7...v1.1.8) (2024-07-01)
 
 
