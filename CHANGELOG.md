@@ -1,3 +1,13 @@
+## [1.1.11](https://github.com/JaCraig/request/compare/v1.1.10...v1.1.11) (2024-07-22)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 10.1.0 to 10.1.1 ([0e284d5](https://github.com/JaCraig/request/commit/0e284d5f99548e84b38288e9f02a09c27d185c27))
+* bump rollup from 4.18.1 to 4.19.0 ([10d9dc7](https://github.com/JaCraig/request/commit/10d9dc7862bcb444a466fb6979692553c7cf21e5))
+* bump ts-jest from 29.2.2 to 29.2.3 ([a72fa20](https://github.com/JaCraig/request/commit/a72fa209a0802db6562ed555311947eb5b9d337a))
+* bump typedoc from 0.26.4 to 0.26.5 ([bd309fb](https://github.com/JaCraig/request/commit/bd309fb8c3fc2ea6ccdebeee535db9e7aebf8b95))
+
 ## [1.1.10](https://github.com/JaCraig/request/compare/v1.1.9...v1.1.10) (2024-07-15)
 
 
