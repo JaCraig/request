@@ -1,3 +1,13 @@
+## [1.1.15](https://github.com/JaCraig/request/compare/v1.1.14...v1.1.15) (2024-08-19)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 10.1.4 to 10.1.6 ([b7950fb](https://github.com/JaCraig/request/commit/b7950fb2ff4758f1b8783663e787b51bc0ec05fd))
+* bump rollup from 4.20.0 to 4.21.0 ([9d5dfaa](https://github.com/JaCraig/request/commit/9d5dfaa082117ab97be42d24ab9dc57ef86e2f53))
+* bump semantic-release from 24.0.0 to 24.1.0 ([7268712](https://github.com/JaCraig/request/commit/7268712be9b241f2939074312372e8169b95a45f))
+* bump typedoc from 0.26.5 to 0.26.6 ([31a84f7](https://github.com/JaCraig/request/commit/31a84f7f9d19533b3f336c68cf17c00f69918702))
+
 ## [1.1.14](https://github.com/JaCraig/request/compare/v1.1.13...v1.1.14) (2024-08-12)
 
 
