@@ -1,3 +1,12 @@
+## [1.1.16](https://github.com/JaCraig/request/compare/v1.1.15...v1.1.16) (2024-08-26)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 10.1.6 to 10.1.7 ([4e5452f](https://github.com/JaCraig/request/commit/4e5452f0ed3afc6b8c1c3a9523b734f6ceae6762))
+* bump ts-jest from 29.2.4 to 29.2.5 ([e564a57](https://github.com/JaCraig/request/commit/e564a578b8d426e2c416f1bc40e1b8b5982b7bc6))
+* bump tslib from 2.6.3 to 2.7.0 ([4043bb1](https://github.com/JaCraig/request/commit/4043bb1f1718fec0521c7f1a2eda23554f6af638))
+
 ## [1.1.15](https://github.com/JaCraig/request/compare/v1.1.14...v1.1.15) (2024-08-19)
 
 
