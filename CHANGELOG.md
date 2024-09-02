@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/JaCraig/request/compare/v1.1.16...v1.1.17) (2024-09-02)
+
+
+### Bug Fixes
+
+* bump rollup from 4.21.0 to 4.21.2 ([892490c](https://github.com/JaCraig/request/commit/892490cbaa29dffa4f6b6f747fd3cd57ba1ad407))
+
 ## [1.1.16](https://github.com/JaCraig/request/compare/v1.1.15...v1.1.16) (2024-08-26)
 
 
