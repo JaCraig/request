@@ -1,3 +1,11 @@
+## [1.1.18](https://github.com/JaCraig/request/compare/v1.1.17...v1.1.18) (2024-09-09)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 10.1.7 to 10.3.3 ([08d3565](https://github.com/JaCraig/request/commit/08d35658606eda424b2305db57068b30ea894cb2))
+* bump typedoc from 0.26.6 to 0.26.7 ([d924492](https://github.com/JaCraig/request/commit/d92449270ea87db2a7757103d629c319d27ae487))
+
 ## [1.1.17](https://github.com/JaCraig/request/compare/v1.1.16...v1.1.17) (2024-09-02)
 
 
