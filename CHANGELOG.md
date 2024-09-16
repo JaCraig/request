@@ -1,3 +1,10 @@
+## [1.1.20](https://github.com/JaCraig/request/compare/v1.1.19...v1.1.20) (2024-09-16)
+
+
+### Bug Fixes
+
+* bump semantic-release from 24.1.0 to 24.1.1 ([dc5f63c](https://github.com/JaCraig/request/commit/dc5f63cb44913c1fc8944c731ec795dad1d7030e))
+
 ## [1.1.19](https://github.com/JaCraig/request/compare/v1.1.18...v1.1.19) (2024-09-16)
 
 
