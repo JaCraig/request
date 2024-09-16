@@ -1,3 +1,13 @@
+## [1.1.19](https://github.com/JaCraig/request/compare/v1.1.18...v1.1.19) (2024-09-16)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 10.3.3 to 10.3.4 ([0736c21](https://github.com/JaCraig/request/commit/0736c21422855809cd9fa3794cc7c78e22bf63cd))
+* bump @types/jest from 29.5.12 to 29.5.13 ([714e641](https://github.com/JaCraig/request/commit/714e641dd162e6a9ac5d7f18dc9965ce140bad66))
+* bump rollup from 4.21.2 to 4.21.3 ([a550218](https://github.com/JaCraig/request/commit/a5502189788192ec16675728b93d5a53a5216cf9))
+* bump typescript from 5.5.4 to 5.6.2 ([186a545](https://github.com/JaCraig/request/commit/186a5452f549943947344acf6de485f3f31a3814))
+
 ## [1.1.18](https://github.com/JaCraig/request/compare/v1.1.17...v1.1.18) (2024-09-09)
 
 
