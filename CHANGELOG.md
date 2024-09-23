@@ -1,3 +1,12 @@
+## [1.1.21](https://github.com/JaCraig/request/compare/v1.1.20...v1.1.21) (2024-09-23)
+
+
+### Bug Fixes
+
+* bump @rollup/plugin-typescript from 11.1.6 to 12.1.0 ([2859cbc](https://github.com/JaCraig/request/commit/2859cbce5adadc4ce6a4d9e8190236ab2c75eb03))
+* bump @semantic-release/github from 10.3.4 to 10.3.5 ([e14c0a8](https://github.com/JaCraig/request/commit/e14c0a8084538100419d2f7af4eba1427a280dd5))
+* bump rollup from 4.21.3 to 4.22.4 ([b3790cf](https://github.com/JaCraig/request/commit/b3790cff414966e022995c83d3253a393ef1aac6))
+
 ## [1.1.20](https://github.com/JaCraig/request/compare/v1.1.19...v1.1.20) (2024-09-16)
 
 
