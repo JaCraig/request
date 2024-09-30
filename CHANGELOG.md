@@ -1,3 +1,10 @@
+## [1.1.23](https://github.com/JaCraig/request/compare/v1.1.22...v1.1.23) (2024-09-30)
+
+
+### Bug Fixes
+
+* bump semantic-release from 24.1.1 to 24.1.2 ([80c65ea](https://github.com/JaCraig/request/commit/80c65ea386d7714051a18f5081e715c87526e91c))
+
 ## [1.1.22](https://github.com/JaCraig/request/compare/v1.1.21...v1.1.22) (2024-09-30)
 
 
