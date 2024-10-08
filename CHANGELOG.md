@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/JaCraig/request/compare/v1.1.24...v1.1.25) (2024-10-08)
+
+
+### Bug Fixes
+
+* bump rollup from 4.22.5 to 4.24.0 ([553c33d](https://github.com/JaCraig/request/commit/553c33ddaa6e8b48cd2211cabe016389b8aebc85))
+
 ## [1.1.24](https://github.com/JaCraig/request/compare/v1.1.23...v1.1.24) (2024-10-08)
 
 
