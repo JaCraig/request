@@ -1,3 +1,11 @@
+## [1.1.26](https://github.com/JaCraig/request/compare/v1.1.25...v1.1.26) (2024-10-14)
+
+
+### Bug Fixes
+
+* bump typedoc from 0.26.8 to 0.26.9 ([00153a6](https://github.com/JaCraig/request/commit/00153a66f2fafac3071bf2789b4019b4c739e5aa))
+* bump typescript from 5.6.2 to 5.6.3 ([3c5aaab](https://github.com/JaCraig/request/commit/3c5aaabfafbdd4a1bfa4400a693477b868d91d6a))
+
 ## [1.1.25](https://github.com/JaCraig/request/compare/v1.1.24...v1.1.25) (2024-10-08)
 
 
