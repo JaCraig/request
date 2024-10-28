@@ -1,3 +1,16 @@
+## [1.1.27](https://github.com/JaCraig/request/compare/v1.1.26...v1.1.27) (2024-10-28)
+
+
+### Bug Fixes
+
+* bump @rollup/plugin-typescript from 12.1.0 to 12.1.1 ([08506a8](https://github.com/JaCraig/request/commit/08506a8fbedb2f69706e6dfa06977814b60235c6))
+* bump rollup from 4.24.0 to 4.24.2 ([183d198](https://github.com/JaCraig/request/commit/183d198c47b88c7ac1ebb3e1dc99a1d34fa09095))
+* bump semantic-release from 24.1.2 to 24.1.3 ([8f486fe](https://github.com/JaCraig/request/commit/8f486fefe941f938930f9f273f064ded38f83ef9))
+* bump semantic-release from 24.1.3 to 24.2.0 ([f5156e8](https://github.com/JaCraig/request/commit/f5156e8caf1de4321bc6db324cfd964effd64a95))
+* bump tslib from 2.7.0 to 2.8.0 ([5edff79](https://github.com/JaCraig/request/commit/5edff790895ebdb232eabaaa0a2cc1405f5f56de))
+* bump typedoc from 0.26.9 to 0.26.10 ([e44e21d](https://github.com/JaCraig/request/commit/e44e21d8736ae98e8b42b4960b548f0b23be18d6))
+* Fix build issue with TypeScript rollup task ([839e9e3](https://github.com/JaCraig/request/commit/839e9e344967b23129fed5e586b11b4b72985442))
+
 ## [1.1.26](https://github.com/JaCraig/request/compare/v1.1.25...v1.1.26) (2024-10-14)
 
 
