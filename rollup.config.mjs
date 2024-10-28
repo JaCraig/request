@@ -24,7 +24,10 @@ export default [
       },
     ],
     external: ['@jacraig/woodchuck'],
-    plugins: [typescript()],
+    plugins: [typescript({
+      declaration: true,
+      declarationDir: 'lib'
+    })],
   },
   {
     input: 'src/Request.ts',
@@ -39,7 +42,10 @@ export default [
       }
     },
     external: ['@jacraig/woodchuck'],
-    plugins: [typescript()],
+    plugins: [typescript({
+      declaration: true,
+      declarationDir: 'lib'
+    })],
   },
   {
     input: 'src/Request.ts',
@@ -54,6 +60,9 @@ export default [
       }
     },
     external: ['@jacraig/woodchuck'],
-    plugins: [typescript(),terser()],
+    plugins: [typescript({
+      declaration: true,
+      declarationDir: 'lib'
+    }),terser()],
   },
 ];

@@ -5,7 +5,7 @@
   "main": "lib/Request.cjs.js",
   "module": "lib/Request.esm.js",
   "browser": "lib/Request.umd.min.js",
-  "types": "lib/declarations/Request.d.ts",
+  "types": "lib/Request.d.ts",
   "files": [
     "lib"
   ],
@@ -13,11 +13,11 @@
     ".": {
       "import": {
         "default": "./lib/Request.esm.js",
-        "types": "./lib/declarations/Request.d.ts"
+        "types": "./lib/Request.d.ts"
       },
       "require": {
         "default": "./lib/Request.cjs.js",
-        "types": "./lib/declarations/Request.d.ts"
+        "types": "./lib/Request.d.ts"
       }
     },
     "./Logger.umd.js": "./lib/Request.umd.js",
