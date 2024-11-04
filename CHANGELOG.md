@@ -1,3 +1,11 @@
+## [1.1.28](https://github.com/JaCraig/request/compare/v1.1.27...v1.1.28) (2024-11-04)
+
+
+### Bug Fixes
+
+* bump tslib from 2.8.0 to 2.8.1 ([54fa29c](https://github.com/JaCraig/request/commit/54fa29c9064185dc0106b8af80d882dfef392442))
+* bump typedoc from 0.26.10 to 0.26.11 ([998c252](https://github.com/JaCraig/request/commit/998c25240f95625b69208a02437e0cdcdc20c0b7))
+
 ## [1.1.27](https://github.com/JaCraig/request/compare/v1.1.26...v1.1.27) (2024-10-28)
 
 
