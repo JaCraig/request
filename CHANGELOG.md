@@ -1,3 +1,10 @@
+## [1.1.29](https://github.com/JaCraig/request/compare/v1.1.28...v1.1.29) (2024-11-04)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.1.1 to 1.1.2 ([b7aff23](https://github.com/JaCraig/request/commit/b7aff231b3753653e4a42f970a08a2630459c319))
+
 ## [1.1.28](https://github.com/JaCraig/request/compare/v1.1.27...v1.1.28) (2024-11-04)
 
 
