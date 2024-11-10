@@ -1,3 +1,10 @@
+## [1.1.31](https://github.com/JaCraig/request/compare/v1.1.30...v1.1.31) (2024-11-10)
+
+
+### Bug Fixes
+
+* bump @types/jest from 29.5.13 to 29.5.14 ([7091964](https://github.com/JaCraig/request/commit/709196456630c191a9c24ad26b13c5c17d8fef4b))
+
 ## [1.1.30](https://github.com/JaCraig/request/compare/v1.1.29...v1.1.30) (2024-11-04)
 
 
