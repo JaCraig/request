@@ -1,3 +1,11 @@
+## [1.1.32](https://github.com/JaCraig/request/compare/v1.1.31...v1.1.32) (2024-11-11)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 11.0.0 to 11.0.1 ([6ecad67](https://github.com/JaCraig/request/commit/6ecad67939a118feb8e2bb71b445ef1cadb2590f))
+* bump rollup from 4.24.4 to 4.25.0 ([a460d74](https://github.com/JaCraig/request/commit/a460d7424915d220c7d566703992590ea57d3eae))
+
 ## [1.1.31](https://github.com/JaCraig/request/compare/v1.1.30...v1.1.31) (2024-11-10)
 
 
