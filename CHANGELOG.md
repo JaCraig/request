@@ -1,3 +1,11 @@
+## [1.1.34](https://github.com/JaCraig/request/compare/v1.1.33...v1.1.34) (2024-11-26)
+
+
+### Bug Fixes
+
+* bump rollup from 4.27.2 to 4.27.4 ([aef887a](https://github.com/JaCraig/request/commit/aef887af2f3e2e741273d94d4d0665dd4a0cf5f2))
+* bump typescript from 5.6.3 to 5.7.2 ([477598f](https://github.com/JaCraig/request/commit/477598fb72a9e1a69adac9f748fff141303c6916))
+
 ## [1.1.33](https://github.com/JaCraig/request/compare/v1.1.32...v1.1.33) (2024-11-18)
 
 
