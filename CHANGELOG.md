@@ -1,3 +1,12 @@
+## [1.1.36](https://github.com/JaCraig/request/compare/v1.1.35...v1.1.36) (2024-12-09)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.1.5 to 1.2.0 ([02d8af4](https://github.com/JaCraig/request/commit/02d8af4ee001a35a97b371dcc9c34e7f997160ed))
+* bump rollup from 4.28.0 to 4.28.1 ([63ac114](https://github.com/JaCraig/request/commit/63ac11499f4c9bc3e553e0fff5ecba1677aeafef))
+* bump typedoc from 0.27.2 to 0.27.4 ([471bcea](https://github.com/JaCraig/request/commit/471bcea0b41387aa3dae5a7df33c76795505eb20))
+
 ## [1.1.35](https://github.com/JaCraig/request/compare/v1.1.34...v1.1.35) (2024-12-02)
 
 
