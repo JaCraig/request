@@ -1,3 +1,11 @@
+## [1.1.37](https://github.com/JaCraig/request/compare/v1.1.36...v1.1.37) (2024-12-16)
+
+
+### Bug Fixes
+
+* bump @rollup/plugin-typescript from 12.1.1 to 12.1.2 ([406ccbe](https://github.com/JaCraig/request/commit/406ccbe489e5d81c82b394dfee8e78e0aae47aaa))
+* bump typedoc from 0.27.4 to 0.27.5 ([cc270c0](https://github.com/JaCraig/request/commit/cc270c08bf3d8ad8cd45176ba765337fe899df95))
+
 ## [1.1.36](https://github.com/JaCraig/request/compare/v1.1.35...v1.1.36) (2024-12-09)
 
 
