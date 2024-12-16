@@ -1,3 +1,10 @@
+## [1.1.38](https://github.com/JaCraig/request/compare/v1.1.37...v1.1.38) (2024-12-16)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.2.0 to 1.2.2 ([d33d023](https://github.com/JaCraig/request/commit/d33d023786f192f3c5c50070bdfb0486e4562de4))
+
 ## [1.1.37](https://github.com/JaCraig/request/compare/v1.1.36...v1.1.37) (2024-12-16)
 
 
