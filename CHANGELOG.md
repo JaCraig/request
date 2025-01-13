@@ -1,3 +1,12 @@
+## [1.1.42](https://github.com/JaCraig/request/compare/v1.1.41...v1.1.42) (2025-01-13)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.2.4 to 1.2.5 ([f9be466](https://github.com/JaCraig/request/commit/f9be466f1b8c2a5c91523d8010fc54d646045cf5))
+* bump rollup from 4.30.0 to 4.30.1 ([12a1d28](https://github.com/JaCraig/request/commit/12a1d283ce97cca42df80b9966e8a4706542cb66))
+* bump typescript from 5.7.2 to 5.7.3 ([1b4325b](https://github.com/JaCraig/request/commit/1b4325bb7943327d49e7f0206591c14be16c7e65))
+
 ## [1.1.41](https://github.com/JaCraig/request/compare/v1.1.40...v1.1.41) (2025-01-06)
 
 
