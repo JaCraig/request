@@ -11,7 +11,7 @@ export class IndexedDbStorageProvider implements StorageProvider {
     // Constructor
     constructor() {
         this.storage = new Map<string, StorageEntry<any>>();
-        this.database = new DatabaseConnection("cacheStore", ["cache", "cacheEntryOptions"], 1);
+        this.database = new DatabaseConnection("cacheStore", ["cache", "cacheEntryOptions"]);
     }
 
     // Clears the database of all items and options

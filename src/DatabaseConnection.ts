@@ -9,47 +9,109 @@ export class DatabaseConnection {
     // dbName: The name of the database
     // tables: The tables to create
     // version: The version of the database
-    constructor(private dbName: string, private tables: string[], private version: number) {
-        const request = indexedDB.open(dbName, version);
-
-        request.onupgradeneeded = (ev: any) => {
-            this.database = ev.target.result;
-            if (!this.database) {
-                return;
-            }
-
-            for (const table of tables) {
-                if (this.database.objectStoreNames.contains(table)) {
-                    this.database.deleteObjectStore(table);
-                }
-
-                this.database.createObjectStore(table);
-            }
-        };
-
-        request.onsuccess = (ev: any) => {
-            this.database = ev.target.result;
-        };
-
-        request.onerror = (ev: any) => {
-            Logger.error('Failed to open the database:', ev.target.error);
-        };
+    constructor(private dbName: string, private tables: string[], private version?: number) {
     }
 
     // Opens the database connection
     // Returns the database connection
     public openDatabase(): Promise<DatabaseConnection> {
+        let that = this;
+
         return new Promise((resolve, reject) => {
-            const request = indexedDB.open(this.dbName, this.version);
+            if (that.database) {
+                return resolve(that);
+            }
+            this.ensureObjectStoreExists(this.dbName, this.tables).then(() => {
+                let request = indexedDB.open(that.dbName, that.version);
+                request.onsuccess = (ev: any) => {
+                    that.database = ev.target.result;
+                    return resolve(that);
+                };
+                request.onerror = (ev: any) => {
+                    return reject(ev);
+                };
+                request.onupgradeneeded = (ev: any) => {
+                    that.database = ev.target.result;
+                    if (!that.database) {
+                        return reject(new Error("Failed to open the database"));
+                    }
+                    for (let x = 0; x < that.tables.length; ++x) {
+                        let table = that.tables[x];
+                        if (that.database.objectStoreNames.contains(table)) {
+                            that.database.deleteObjectStore(table);
+                        }
+                        that.database.createObjectStore(table);
+                    }
+                };
+                request.onblocked = (ev: any) => {
+                    return reject(new Error("Database connection blocked"));
+                };
+            }).catch(reject);
+        });
+    }
 
-            request.onsuccess = (ev: any) => {
-                this.database = ev.target.result;
-                resolve(this);
+    // Ensures that the object store exists
+    // dbName: The name of the database
+    // tables: The tables to create
+    // options: The options for the object store
+    private ensureObjectStoreExists(dbName: string, tables: string[], options: any = {}): Promise<boolean> {
+        let retries = 0;
+        let that = this;
+        return new Promise((resolve, reject) => {
+            const request = indexedDB.open(dbName);
+    
+            request.onsuccess = (event: any) => {
+                const db = event.target.result;
+                that.version = db.version;
+                let missingTables = tables.filter((table) => !db.objectStoreNames.contains(table));
+                if (missingTables.length == 0) {
+                    db.close();
+                    resolve(true);
+                    return;
+                }
+
+                // Close the existing connection
+                db.close();
+    
+                // Increment the version to create the object store
+                const newVersion = db.version + 1;
+                that.version = newVersion;
+                const upgradeRequest = indexedDB.open(dbName, newVersion);
+    
+                upgradeRequest.onupgradeneeded = (event:any) => {
+                    const database = event.target.result;
+                    for (let x = 0; x < missingTables.length; ++x) {
+                        let table = missingTables[x];
+                        database.createObjectStore(table);
+                    }
+                };
+    
+                upgradeRequest.onsuccess = () => {
+                    upgradeRequest.result.close();
+                    resolve(true);
+                };
+    
+                upgradeRequest.onerror = (e:any) => {
+                    Logger.error("Error upgrading database:",e.target.error);
+                    reject(new Error("Error upgrading database: " + e.target.error));
+                };
+    
+                upgradeRequest.onblocked = (e: any) => {
+                    retries++;
+                    if (retries > 3) {
+                        reject(new Error("Database upgrade blocked"));
+                        return;
+                    }
+    
+                    setTimeout(() => {
+                        that.ensureObjectStoreExists(dbName, tables, options).then(resolve, reject);
+                    }, 1000);
+                };
             };
-
-            request.onerror = (ev: any) => {
-                Logger.error('Failed to open the database:', ev.target.error);
-                reject(new Error('Failed to open the database:' + ev.target.error));
+    
+            request.onerror = (e:any) => {
+                Logger.error("Error opening database:",e.target.error);
+                reject(e.target.error);
             };
         });
     }
@@ -263,5 +325,13 @@ export class DatabaseConnection {
                 reject(new Error('Failed to retrieve objects from the database: ' + ev.target.error));
             };
         });
+    }
+
+    // Closes the database connection
+    public close(): void {
+        if(this.database) {
+            this.database.close();
+            this.database = undefined;
+        }
     }
 }

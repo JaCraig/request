@@ -11,6 +11,7 @@ describe("DatabaseConnection", () => {
   afterEach(async () => {
     await databaseConnection.clear("table1");
     await databaseConnection.clear("table2");
+    databaseConnection.close();
   });
 
   it("should add an object to the database", async () => {
