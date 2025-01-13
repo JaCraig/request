@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/JaCraig/request/compare/v1.1.42...v1.2.0) (2025-01-13)
+
+
+### Features
+
+* **database:** enhance DatabaseConnection with improved object store management ([34fb4ad](https://github.com/JaCraig/request/commit/34fb4ad79c48159be41d9c6cc929a4a4d08139f1))
+
 ## [1.1.42](https://github.com/JaCraig/request/compare/v1.1.41...v1.1.42) (2025-01-13)
 
 
