@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/JaCraig/request/compare/v1.2.1...v1.2.2) (2025-01-27)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.2.6 to 1.2.7 ([1f08423](https://github.com/JaCraig/request/commit/1f08423992eb2453dad7ef65cadfa953a89cd611))
+* bump rollup from 4.31.0 to 4.32.0 ([7131aed](https://github.com/JaCraig/request/commit/7131aeda35d1aa9cacd93bcb2457a7586011e721))
+
 ## [1.2.1](https://github.com/JaCraig/request/compare/v1.2.0...v1.2.1) (2025-01-20)
 
 
