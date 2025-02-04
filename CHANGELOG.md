@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/JaCraig/request/compare/v1.2.3...v1.2.4) (2025-02-04)
+
+
+### Bug Fixes
+
+* bump rollup from 4.32.0 to 4.34.1 ([aed5856](https://github.com/JaCraig/request/commit/aed5856d5295c646c8f50c10a005f881dededee3))
+
 ## [1.2.3](https://github.com/JaCraig/request/compare/v1.2.2...v1.2.3) (2025-02-03)
 
 
