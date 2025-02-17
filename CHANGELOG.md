@@ -1,3 +1,12 @@
+## [1.2.7](https://github.com/JaCraig/request/compare/v1.2.6...v1.2.7) (2025-02-17)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.2.10 to 1.2.11 ([d43f2f6](https://github.com/JaCraig/request/commit/d43f2f6e58b853de6d8755dc82e9536f1f7197d5))
+* bump rollup from 4.34.6 to 4.34.8 ([6462859](https://github.com/JaCraig/request/commit/646285931d2fbe7b7a46d5a29821109bf5a64f72))
+* bump semantic-release from 24.2.2 to 24.2.3 ([11df99b](https://github.com/JaCraig/request/commit/11df99bdd9cb3445961c0387c4a007c4ed063f22))
+
 ## [1.2.6](https://github.com/JaCraig/request/compare/v1.2.5...v1.2.6) (2025-02-11)
 
 
