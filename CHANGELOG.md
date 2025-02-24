@@ -1,3 +1,11 @@
+## [1.2.8](https://github.com/JaCraig/request/compare/v1.2.7...v1.2.8) (2025-02-24)
+
+
+### Bug Fixes
+
+* bump ts-jest from 29.2.5 to 29.2.6 ([8b6d323](https://github.com/JaCraig/request/commit/8b6d323576cb7c731c02f575f9ecfd3a894d8af4))
+* bump typedoc from 0.27.7 to 0.27.8 ([335f5f2](https://github.com/JaCraig/request/commit/335f5f2a7cdd403115297215a78d5b207aaad3c2))
+
 ## [1.2.7](https://github.com/JaCraig/request/compare/v1.2.6...v1.2.7) (2025-02-17)
 
 
