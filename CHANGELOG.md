@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/JaCraig/request/compare/v1.2.8...v1.2.9) (2025-02-24)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.2.11 to 1.2.12 ([0765285](https://github.com/JaCraig/request/commit/0765285a9e46c7517b4d29633a9590a5b16fe854))
+
 ## [1.2.8](https://github.com/JaCraig/request/compare/v1.2.7...v1.2.8) (2025-02-24)
 
 
