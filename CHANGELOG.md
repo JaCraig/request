@@ -1,3 +1,12 @@
+## [1.2.10](https://github.com/JaCraig/request/compare/v1.2.9...v1.2.10) (2025-03-05)
+
+
+### Bug Fixes
+
+* bump rollup from 4.34.8 to 4.34.9 ([dd26a2a](https://github.com/JaCraig/request/commit/dd26a2a8c76a28d042bfcc497669801aac8415b1))
+* bump typedoc from 0.27.8 to 0.27.9 ([267ecc9](https://github.com/JaCraig/request/commit/267ecc988906bb9e70d184e1ad04dba62fd77aa8))
+* bump typescript from 5.7.3 to 5.8.2 ([1f4b3f5](https://github.com/JaCraig/request/commit/1f4b3f5944799ca18e8fc4c191f63bbbec124f28))
+
 ## [1.2.9](https://github.com/JaCraig/request/compare/v1.2.8...v1.2.9) (2025-02-24)
 
 
