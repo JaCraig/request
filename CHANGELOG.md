@@ -1,3 +1,10 @@
+## [1.2.14](https://github.com/JaCraig/request/compare/v1.2.13...v1.2.14) (2025-03-17)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.2.13 to 1.2.14 ([d972338](https://github.com/JaCraig/request/commit/d972338444d460ea60086c06cb4f0e803f6e92f4))
+
 ## [1.2.13](https://github.com/JaCraig/request/compare/v1.2.12...v1.2.13) (2025-03-17)
 
 
