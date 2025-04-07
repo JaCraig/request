@@ -1,3 +1,11 @@
+## [1.2.21](https://github.com/JaCraig/request/compare/v1.2.20...v1.2.21) (2025-04-07)
+
+
+### Bug Fixes
+
+* bump typedoc from 0.28.1 to 0.28.2 ([0d7ecdb](https://github.com/JaCraig/request/commit/0d7ecdb0c6933b23f825e096f90cc56fb60e57bd))
+* bump typescript from 5.8.2 to 5.8.3 ([faf90f0](https://github.com/JaCraig/request/commit/faf90f01f157f166e1000abfae12b72825578779))
+
 ## [1.2.20](https://github.com/JaCraig/request/compare/v1.2.19...v1.2.20) (2025-04-07)
 
 
