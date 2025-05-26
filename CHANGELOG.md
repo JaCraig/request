@@ -1,3 +1,10 @@
+## [1.2.36](https://github.com/JaCraig/request/compare/v1.2.35...v1.2.36) (2025-05-26)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 11.0.2 to 11.0.3 ([d00fa05](https://github.com/JaCraig/request/commit/d00fa0550ea0bc21765007c3f26a207fceaf7938))
+
 ## [1.2.35](https://github.com/JaCraig/request/compare/v1.2.34...v1.2.35) (2025-05-26)
 
 
