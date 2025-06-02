@@ -1,3 +1,11 @@
+## [1.2.37](https://github.com/JaCraig/request/compare/v1.2.36...v1.2.37) (2025-06-02)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.2.30 to 1.2.32 ([1c84590](https://github.com/JaCraig/request/commit/1c845909c5045a57bec19b6c3c9f4371346c3649))
+* bump typedoc from 0.28.4 to 0.28.5 ([917429c](https://github.com/JaCraig/request/commit/917429c5371f132287a703add4b30d263f11544c))
+
 ## [1.2.36](https://github.com/JaCraig/request/compare/v1.2.35...v1.2.36) (2025-05-26)
 
 
