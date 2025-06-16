@@ -1,3 +1,10 @@
+## [1.2.41](https://github.com/JaCraig/request/compare/v1.2.40...v1.2.41) (2025-06-16)
+
+
+### Bug Fixes
+
+* bump jest and @types/jest ([6528a31](https://github.com/JaCraig/request/commit/6528a312a220c5caec91ea3c980ccdd0b1a2681f))
+
 ## [1.2.40](https://github.com/JaCraig/request/compare/v1.2.39...v1.2.40) (2025-06-16)
 
 
