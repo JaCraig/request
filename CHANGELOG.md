@@ -1,3 +1,10 @@
+## [1.2.45](https://github.com/JaCraig/request/compare/v1.2.44...v1.2.45) (2025-06-23)
+
+
+### Bug Fixes
+
+* bump @rollup/plugin-typescript from 12.1.2 to 12.1.3 ([51ea2f7](https://github.com/JaCraig/request/commit/51ea2f719dc2c1e0d637d84cb6ad9ad130ae9e32))
+
 ## [1.2.44](https://github.com/JaCraig/request/compare/v1.2.43...v1.2.44) (2025-06-23)
 
 
