@@ -1,3 +1,10 @@
+## [1.2.50](https://github.com/JaCraig/request/compare/v1.2.49...v1.2.50) (2025-06-30)
+
+
+### Bug Fixes
+
+* bump jest from 30.0.2 to 30.0.3 ([71991df](https://github.com/JaCraig/request/commit/71991df67d4eed0aebe142e0d539f17c4b8c4d96))
+
 ## [1.2.49](https://github.com/JaCraig/request/compare/v1.2.48...v1.2.49) (2025-06-30)
 
 
