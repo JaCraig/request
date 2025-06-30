@@ -1,3 +1,10 @@
+## [1.2.51](https://github.com/JaCraig/request/compare/v1.2.50...v1.2.51) (2025-06-30)
+
+
+### Bug Fixes
+
+* bump semantic-release from 24.2.5 to 24.2.6 ([0c95cd5](https://github.com/JaCraig/request/commit/0c95cd51e70e7e7b08db81ecf96e717150c95d27))
+
 ## [1.2.50](https://github.com/JaCraig/request/compare/v1.2.49...v1.2.50) (2025-06-30)
 
 
