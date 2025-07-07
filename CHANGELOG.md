@@ -1,3 +1,11 @@
+## [1.2.52](https://github.com/JaCraig/request/compare/v1.2.51...v1.2.52) (2025-07-07)
+
+
+### Bug Fixes
+
+* bump jest from 30.0.3 to 30.0.4 ([74c397a](https://github.com/JaCraig/request/commit/74c397a0d21df2a29cb12e3b70fb3a85f26636a0))
+* bump rollup from 4.44.1 to 4.44.2 ([6b55da4](https://github.com/JaCraig/request/commit/6b55da4f66719ada7db5ea85ac6c15e72817dfcc))
+
 ## [1.2.51](https://github.com/JaCraig/request/compare/v1.2.50...v1.2.51) (2025-06-30)
 
 
