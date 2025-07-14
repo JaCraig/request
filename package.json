@@ -1,6 +1,6 @@
 {
   "name": "@jacraig/request",
-  "version": "1.2.54",
+  "version": "1.2.55",
   "description": "Wrapper around fetch that adds functionality including caching, retry, and timeouts.",
   "main": "lib/Request.cjs.js",
   "module": "lib/Request.esm.js",
