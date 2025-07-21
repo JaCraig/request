@@ -1,3 +1,11 @@
+## [1.2.56](https://github.com/JaCraig/request/compare/v1.2.55...v1.2.56) (2025-07-21)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.3.6 to 1.3.8 ([123fa1f](https://github.com/JaCraig/request/commit/123fa1f767d99f8662fe4a9fc4bc8dfe653c8363))
+* bump rollup from 4.45.0 to 4.45.1 ([7349ca4](https://github.com/JaCraig/request/commit/7349ca4dd4a02de2ffd3db57129246a534d8a2fd))
+
 ## [1.2.55](https://github.com/JaCraig/request/compare/v1.2.54...v1.2.55) (2025-07-14)
 
 
