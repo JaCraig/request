@@ -1,3 +1,11 @@
+## [1.2.62](https://github.com/JaCraig/request/compare/v1.2.61...v1.2.62) (2025-08-04)
+
+
+### Bug Fixes
+
+* bump rollup from 4.46.1 to 4.46.2 ([bc5c7ef](https://github.com/JaCraig/request/commit/bc5c7eff01df5fcc844bc666b6fe68decd3ea9f9))
+* bump typescript from 5.8.3 to 5.9.2 ([7134293](https://github.com/JaCraig/request/commit/7134293e597a3d06f56005e6ad22b001d96218e8))
+
 ## [1.2.61](https://github.com/JaCraig/request/compare/v1.2.60...v1.2.61) (2025-08-04)
 
 
