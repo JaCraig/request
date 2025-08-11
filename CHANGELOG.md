@@ -1,3 +1,11 @@
+## [1.2.65](https://github.com/JaCraig/request/compare/v1.2.64...v1.2.65) (2025-08-11)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 11.0.3 to 11.0.4 ([d8d094c](https://github.com/JaCraig/request/commit/d8d094c3de5ac9f5211a3a4ac213b3cc7da37ae2))
+* bump typedoc from 0.28.9 to 0.28.10 ([ccc5cec](https://github.com/JaCraig/request/commit/ccc5cec5924d752e4e8694e0d580deb682238824))
+
 ## [1.2.64](https://github.com/JaCraig/request/compare/v1.2.63...v1.2.64) (2025-08-11)
 
 
