@@ -1,3 +1,10 @@
+## [1.2.73](https://github.com/JaCraig/request/compare/v1.2.72...v1.2.73) (2025-09-08)
+
+
+### Bug Fixes
+
+* bump jest from 30.0.5 to 30.1.3 ([889d834](https://github.com/JaCraig/request/commit/889d834d6c60b00f8ca6959cc99325ab52a518f6))
+
 ## [1.2.72](https://github.com/JaCraig/request/compare/v1.2.71...v1.2.72) (2025-09-08)
 
 
