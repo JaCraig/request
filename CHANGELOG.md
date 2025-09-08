@@ -1,3 +1,12 @@
+## [1.2.71](https://github.com/JaCraig/request/compare/v1.2.70...v1.2.71) (2025-09-08)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.3.18 to 1.3.24 ([dfc4475](https://github.com/JaCraig/request/commit/dfc447584b52c562f30f2511d84176d872bd8cf3))
+* bump fake-indexeddb from 6.1.0 to 6.2.2 ([ea7cfee](https://github.com/JaCraig/request/commit/ea7cfeedcf47103894d3901581fa962b4c32fdb5))
+* bump typedoc from 0.28.11 to 0.28.12 ([65ede73](https://github.com/JaCraig/request/commit/65ede735ed0c4f8b7220ee25775d35766ec17675))
+
 ## [1.2.70](https://github.com/JaCraig/request/compare/v1.2.69...v1.2.70) (2025-08-26)
 
 
