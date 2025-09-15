@@ -1,3 +1,10 @@
+## [1.2.77](https://github.com/JaCraig/request/compare/v1.2.76...v1.2.77) (2025-09-15)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 11.0.5 to 11.0.6 ([e13e1d4](https://github.com/JaCraig/request/commit/e13e1d4dc9d35ca2e0b9177a91b9ac26e56ac00e))
+
 ## [1.2.76](https://github.com/JaCraig/request/compare/v1.2.75...v1.2.76) (2025-09-15)
 
 
