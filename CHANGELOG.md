@@ -1,3 +1,11 @@
+## [1.2.76](https://github.com/JaCraig/request/compare/v1.2.75...v1.2.76) (2025-09-15)
+
+
+### Bug Fixes
+
+* bump rollup from 4.48.1 to 4.50.2 ([2d3f5ef](https://github.com/JaCraig/request/commit/2d3f5ef637bc2b6036e457c89ea0f750542d8e97))
+* bump typedoc from 0.28.12 to 0.28.13 ([422d2bd](https://github.com/JaCraig/request/commit/422d2bd39b0bb4a021eb68831372db3d5253f15d))
+
 ## [1.2.75](https://github.com/JaCraig/request/compare/v1.2.74...v1.2.75) (2025-09-15)
 
 
