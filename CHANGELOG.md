@@ -1,3 +1,13 @@
+## [1.2.78](https://github.com/JaCraig/request/compare/v1.2.77...v1.2.78) (2025-09-22)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.3.26 to 1.3.30 ([ca47e30](https://github.com/JaCraig/request/commit/ca47e30fe52767cd828b37ce8549c5c62a36bb0c))
+* bump rollup from 4.50.2 to 4.52.0 ([48ccc11](https://github.com/JaCraig/request/commit/48ccc11a095c73157a29fe44b94f69b6ba26ba28))
+* bump semantic-release from 24.2.8 to 24.2.9 ([a43a947](https://github.com/JaCraig/request/commit/a43a9479adb1da282190d1781ce8c9c8bc2f6bad))
+* bump ts-jest from 29.4.1 to 29.4.4 ([88861c6](https://github.com/JaCraig/request/commit/88861c633f64cac302b0bddadf4f2adef01ec404))
+
 ## [1.2.77](https://github.com/JaCraig/request/compare/v1.2.76...v1.2.77) (2025-09-15)
 
 
