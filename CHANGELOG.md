@@ -1,3 +1,10 @@
+## [1.2.80](https://github.com/JaCraig/request/compare/v1.2.79...v1.2.80) (2025-09-29)
+
+
+### Bug Fixes
+
+* bump rollup from 4.52.0 to 4.52.3 ([2c6a3b9](https://github.com/JaCraig/request/commit/2c6a3b904165b483f0350f47b557f9c48536f960))
+
 ## [1.2.79](https://github.com/JaCraig/request/compare/v1.2.78...v1.2.79) (2025-09-29)
 
 
