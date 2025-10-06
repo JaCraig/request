@@ -1,3 +1,10 @@
+## [1.2.82](https://github.com/JaCraig/request/compare/v1.2.81...v1.2.82) (2025-10-06)
+
+
+### Bug Fixes
+
+* bump typescript from 5.9.2 to 5.9.3 ([81be814](https://github.com/JaCraig/request/commit/81be814d331e8bb91429ad3d03ae95608eb36aaf))
+
 ## [1.2.81](https://github.com/JaCraig/request/compare/v1.2.80...v1.2.81) (2025-10-06)
 
 
