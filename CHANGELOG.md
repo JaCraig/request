@@ -1,3 +1,10 @@
+## [1.2.84](https://github.com/JaCraig/request/compare/v1.2.83...v1.2.84) (2025-10-13)
+
+
+### Bug Fixes
+
+* bump ts-jest from 29.4.4 to 29.4.5 ([64dadfb](https://github.com/JaCraig/request/commit/64dadfbad977e102bf24379973650703466e4a38))
+
 ## [1.2.83](https://github.com/JaCraig/request/compare/v1.2.82...v1.2.83) (2025-10-06)
 
 
