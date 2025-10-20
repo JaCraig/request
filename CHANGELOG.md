@@ -1,3 +1,10 @@
+## [1.2.88](https://github.com/JaCraig/request/compare/v1.2.87...v1.2.88) (2025-10-20)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 11.0.6 to 12.0.0 ([994d0b7](https://github.com/JaCraig/request/commit/994d0b7d9c1fedfe53c36916c491a8f51820a271))
+
 ## [1.2.87](https://github.com/JaCraig/request/compare/v1.2.86...v1.2.87) (2025-10-14)
 
 
