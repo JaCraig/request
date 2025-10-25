@@ -1,3 +1,11 @@
+## [1.2.90](https://github.com/JaCraig/request/compare/v1.2.89...v1.2.90) (2025-10-25)
+
+
+### Bug Fixes
+
+* bump rollup from 4.52.4 to 4.52.5 ([ed2d058](https://github.com/JaCraig/request/commit/ed2d05838dd1513f0687f21f5f7f790ca551fb12))
+* bump semantic-release from 24.2.9 to 25.0.1 ([56ec048](https://github.com/JaCraig/request/commit/56ec048cd4b40374776718cdff050efd54eac6cc))
+
 ## [1.2.89](https://github.com/JaCraig/request/compare/v1.2.88...v1.2.89) (2025-10-20)
 
 
