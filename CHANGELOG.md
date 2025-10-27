@@ -1,3 +1,10 @@
+## [1.2.91](https://github.com/JaCraig/request/compare/v1.2.90...v1.2.91) (2025-10-27)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.3.34 to 1.3.37 ([5ccf865](https://github.com/JaCraig/request/commit/5ccf8651cd57473be744673615919d463d58a5e3))
+
 ## [1.2.90](https://github.com/JaCraig/request/compare/v1.2.89...v1.2.90) (2025-10-25)
 
 
