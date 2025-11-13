@@ -1,3 +1,10 @@
+## [1.2.96](https://github.com/JaCraig/request/compare/v1.2.95...v1.2.96) (2025-11-13)
+
+
+### Bug Fixes
+
+* bump fake-indexeddb from 6.2.4 to 6.2.5 ([2f0e8d0](https://github.com/JaCraig/request/commit/2f0e8d09548e3b199d14233192278f4dade9f747))
+
 ## [1.2.95](https://github.com/JaCraig/request/compare/v1.2.94...v1.2.95) (2025-11-10)
 
 
