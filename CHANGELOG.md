@@ -1,3 +1,10 @@
+## [1.2.97](https://github.com/JaCraig/request/compare/v1.2.96...v1.2.97) (2025-11-18)
+
+
+### Bug Fixes
+
+* bump js-yaml in the npm_and_yarn group across 1 directory ([0ccb41a](https://github.com/JaCraig/request/commit/0ccb41aa7a0c44e1ee40841adf0c5d15ac55700e))
+
 ## [1.2.96](https://github.com/JaCraig/request/compare/v1.2.95...v1.2.96) (2025-11-13)
 
 
