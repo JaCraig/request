@@ -1,3 +1,11 @@
+## [1.2.99](https://github.com/JaCraig/request/compare/v1.2.98...v1.2.99) (2025-11-24)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.3.39 to 1.3.41 ([4a545a4](https://github.com/JaCraig/request/commit/4a545a4ce454e6c4feb2f928260bfc5acb21a9e4))
+* bump tar in the npm_and_yarn group across 1 directory ([4e623a3](https://github.com/JaCraig/request/commit/4e623a329f9548e552d048a4010ac57132b36492))
+
 ## [1.2.98](https://github.com/JaCraig/request/compare/v1.2.97...v1.2.98) (2025-11-24)
 
 
