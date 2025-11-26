@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/JaCraig/request/compare/v1.2.99...v1.3.0) (2025-11-26)
+
+
+### Features
+
+* **code-changes:** implement new feature for enhanced user experience ([daede6a](https://github.com/JaCraig/request/commit/daede6a30d58198613361d82f4d77e7df2e1a1ac))
+
 ## [1.2.99](https://github.com/JaCraig/request/compare/v1.2.98...v1.2.99) (2025-11-24)
 
 
