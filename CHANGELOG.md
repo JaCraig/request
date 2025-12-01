@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/JaCraig/request/compare/v1.3.0...v1.3.1) (2025-12-01)
+
+
+### Bug Fixes
+
+* bump typedoc from 0.28.14 to 0.28.15 ([49657cf](https://github.com/JaCraig/request/commit/49657cfae954900919bac85858fbb27a5eb6756c))
+
 # [1.3.0](https://github.com/JaCraig/request/compare/v1.2.99...v1.3.0) (2025-11-26)
 
 
