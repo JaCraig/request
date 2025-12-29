@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/JaCraig/request/compare/v1.3.5...v1.3.6) (2025-12-29)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.4.2 to 1.4.3 ([cf8cf17](https://github.com/JaCraig/request/commit/cf8cf172567fb88d4cb02dd176388c84263ace31))
+
 ## [1.3.5](https://github.com/JaCraig/request/compare/v1.3.4...v1.3.5) (2025-12-22)
 
 
