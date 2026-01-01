@@ -1,7 +1,6 @@
-import { Request, StorageMode, CacheNames } from "../src/Request";
+import fetchMock from "jest-fetch-mock";
 import { InMemoryStorageProvider } from "../src/InMemoryStorageProvider";
-import { CacheEntryOptions } from "../src/CacheEntryOptions";
-import { FetchMock } from "jest-fetch-mock";
+import { CacheNames, Request, StorageMode } from "../src/Request";
 
 describe("Request", () => {
   let request: Request;
@@ -9,23 +8,23 @@ describe("Request", () => {
   beforeEach(() => {
     let url = "https://api.example.com";
     request = new Request({
-        method: "GET",
-        url: "",
-        headers: {},
-        credentials: "same-origin",
-        serializer: JSON.stringify,
-        parser: (response: Response) => response.json(),
-        success: (response) => { },
-        error: (reason) => { },
-        retry: (attempt) => { },
-        storageMode: StorageMode.NetworkFirst,
-        cache: CacheNames.Default,
-        cacheKey: "",
-        timeout: 60000,
-        retryAttempts: 3,
-        retryDelay: 1000
+      method: "GET",
+      url: "",
+      headers: {},
+      credentials: "same-origin",
+      serializer: JSON.stringify,
+      parser: (response: Response) => response.json(),
+      success: (response) => {},
+      error: (reason) => {},
+      retry: (attempt) => {},
+      storageMode: StorageMode.NetworkFirst,
+      cache: CacheNames.Default,
+      cacheKey: "",
+      timeout: 60000,
+      retryAttempts: 3,
+      retryDelay: 1000,
     });
-    
+
     fetchMock.doMock();
   });
 
@@ -36,7 +35,7 @@ describe("Request", () => {
     expect(getRequest["options"]).toEqual({
       method: "GET",
       url: "https://api.example.com",
-      headers: { "Accept": "application/json" },
+      headers: { Accept: "application/json" },
       data: undefined,
       credentials: "same-origin",
       serializer: JSON.stringify,
@@ -49,12 +48,14 @@ describe("Request", () => {
       cacheKey: "https://api.example.comundefined",
       timeout: 60000,
       retryAttempts: 3,
-      retryDelay: 1000
+      retryDelay: 1000,
     });
   });
 
   it("should create a POST request with custom options", () => {
-    const postRequest = Request.post("https://api.example.com", { name: "John Doe" });
+    const postRequest = Request.post("https://api.example.com", {
+      name: "John Doe",
+    });
 
     expect(postRequest).toBeInstanceOf(Request);
     expect(postRequest["options"]).toEqual({
@@ -63,7 +64,7 @@ describe("Request", () => {
       data: { name: "John Doe" },
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json"
+        Accept: "application/json",
       },
       credentials: "same-origin",
       serializer: JSON.stringify,
@@ -73,22 +74,27 @@ describe("Request", () => {
       retry: expect.any(Function),
       storageMode: StorageMode.NetworkOnly,
       cache: CacheNames.Default,
-      cacheKey: "https://api.example.com{\"name\":\"John Doe\"}",
+      cacheKey: 'https://api.example.com{"name":"John Doe"}',
       timeout: 60000,
       retryAttempts: 3,
-      retryDelay: 1000
+      retryDelay: 1000,
     });
   });
 
   it("should set authentication provider", () => {
-    const authenticationProvider = { authenticationFailed: jest.fn(), authenticate: jest.fn() };
+    const authenticationProvider = {
+      authenticationFailed: jest.fn(),
+      authenticate: jest.fn(),
+    };
     request.withAuthenticationProvider(authenticationProvider);
 
-    expect(request["options"].authenticationProvider).toBe(authenticationProvider);
+    expect(request["options"].authenticationProvider).toBe(
+      authenticationProvider
+    );
   });
 
   it("should add headers to the request", () => {
-    const headers = { "Authorization": "Bearer token" };
+    const headers = { Authorization: "Bearer token" };
     request.withHeaders(headers);
 
     expect(request["options"].headers).toEqual(headers);
@@ -137,7 +143,8 @@ describe("Request", () => {
   });
 
   it("should set the retry callback for the request", () => {
-    const retryCallback = (attempt: number) => console.log(`Retry attempt: ${attempt}`);
+    const retryCallback = (attempt: number) =>
+      console.log(`Retry attempt: ${attempt}`);
     request.onRetry(retryCallback);
 
     expect(request["options"].retry).toBe(retryCallback);
@@ -188,19 +195,64 @@ describe("Request", () => {
 
   it("should abort the request and call the error callback", () => {
     const errorCallback = jest.fn();
-    request.withCancellationToken
+    request.withCancellationToken;
     request.onError(errorCallback);
 
     request.send();
     request.abort();
 
     expect(request["abortController"]).not.toBeNull();
-    expect(errorCallback).toHaveBeenCalledWith(new Error("The request was aborted."));
+    expect(errorCallback).toHaveBeenCalledWith(
+      new Error("The request was aborted.")
+    );
+  });
+
+  it("should timeout and abort fetch when request takes too long", async () => {
+    const errorCallback = jest.fn();
+    const req = Request.get("https://api.example.com/slow")
+      .withTimeout(10)
+      .withRetryAttempts(0)
+      .onError(errorCallback);
+    // Ensure the test environment is treated as online so the request goes to network and can timeout
+    if (typeof navigator === "object") {
+      try {
+        Object.defineProperty(navigator, "onLine", {
+          get: () => true,
+          configurable: true,
+        });
+      } catch (e) {
+        try {
+          (navigator as any).onLine = true;
+        } catch {}
+      }
+      // Replace the global navigator with a plain object overlay to ensure tests can set onLine
+      try {
+        (global as any).navigator = Object.assign({}, navigator as any, {
+          onLine: true,
+        });
+      } catch (e) {
+        /* ignore */
+      }
+    } else {
+      (global as any).navigator = { onLine: true };
+    }
+
+    fetchMock.mockResponse(async () => {
+      await new Promise((resolve) => setTimeout(resolve, 50)); // simulate slow response
+      return JSON.stringify({ hello: "world" });
+    });
+
+    await expect(req.send()).rejects.toThrow("Request timeout");
+    expect((req as any).abortController).not.toBeNull();
+    expect((req as any).abortController.signal.aborted).toBe(true);
+    expect(errorCallback).toHaveBeenCalledWith(expect.any(Error));
   });
 
   it("should handle network being offline and reject the promise", async () => {
     const timeout = -1000;
 
-    expect(request.withTimeout(timeout).send()).rejects.toEqual("System is offline");
+    expect(request.withTimeout(timeout).send()).rejects.toEqual(
+      "System is offline"
+    );
   });
 });
