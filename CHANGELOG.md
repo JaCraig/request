@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/JaCraig/request/compare/v1.3.6...v1.4.0) (2026-01-01)
+
+
+### Features
+
+* **Request:** enhance request handling and testing ([3983909](https://github.com/JaCraig/request/commit/3983909f92af89623a66768e15d67ea5e2c4de59))
+
 ## [1.3.6](https://github.com/JaCraig/request/compare/v1.3.5...v1.3.6) (2025-12-29)
 
 
