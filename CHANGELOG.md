@@ -1,3 +1,11 @@
+## [1.4.3](https://github.com/JaCraig/request/compare/v1.4.2...v1.4.3) (2026-01-19)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.5.1 to 1.5.2 ([c461448](https://github.com/JaCraig/request/commit/c46144803176af7d6fe70eedcc0ed6eb34c77771))
+* bump rollup from 4.55.1 to 4.55.2 ([964ac9a](https://github.com/JaCraig/request/commit/964ac9a8efc9a6ddd6876e09864d722c6115ba14))
+
 ## [1.4.2](https://github.com/JaCraig/request/compare/v1.4.1...v1.4.2) (2026-01-12)
 
 
