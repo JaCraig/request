@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/JaCraig/request/compare/v1.4.4...v1.4.5) (2026-01-22)
+
+
+### Bug Fixes
+
+* bump lodash in the npm_and_yarn group across 1 directory ([4ee3f32](https://github.com/JaCraig/request/commit/4ee3f3281544e528f7f837c54ed5d461fc7c5c41))
+
 ## [1.4.4](https://github.com/JaCraig/request/compare/v1.4.3...v1.4.4) (2026-01-22)
 
 
