@@ -1,3 +1,11 @@
+## [1.4.7](https://github.com/JaCraig/request/compare/v1.4.6...v1.4.7) (2026-02-02)
+
+
+### Bug Fixes
+
+* bump rollup from 4.56.0 to 4.57.1 ([3b525f9](https://github.com/JaCraig/request/commit/3b525f9efbdbbcbeddfe2f321fa32c480f8440bd))
+* bump semantic-release from 25.0.2 to 25.0.3 ([8837077](https://github.com/JaCraig/request/commit/8837077b33942ccf0e665f3bf4a329204cbeefe4))
+
 ## [1.4.6](https://github.com/JaCraig/request/compare/v1.4.5...v1.4.6) (2026-01-26)
 
 
