@@ -1,3 +1,10 @@
+## [1.4.8](https://github.com/JaCraig/request/compare/v1.4.7...v1.4.8) (2026-02-02)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.5.5 to 1.5.6 ([de2b57c](https://github.com/JaCraig/request/commit/de2b57c6fb2d18fa8fa471c0d019b6e401f825e8))
+
 ## [1.4.7](https://github.com/JaCraig/request/compare/v1.4.6...v1.4.7) (2026-02-02)
 
 
