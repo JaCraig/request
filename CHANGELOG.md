@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/JaCraig/request/compare/v1.4.8...v1.4.9) (2026-02-07)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github from 12.0.2 to 12.0.3 ([752fb36](https://github.com/JaCraig/request/commit/752fb36319ced2152fbf36239de7cd760741e43e))
+
 ## [1.4.8](https://github.com/JaCraig/request/compare/v1.4.7...v1.4.8) (2026-02-02)
 
 
