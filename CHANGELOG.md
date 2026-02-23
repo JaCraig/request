@@ -1,3 +1,10 @@
+## [1.4.14](https://github.com/JaCraig/request/compare/v1.4.13...v1.4.14) (2026-02-23)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.5.10 to 1.5.12 ([d6bb7f3](https://github.com/JaCraig/request/commit/d6bb7f3d54d926a143d640bf110503e73377b444))
+
 ## [1.4.13](https://github.com/JaCraig/request/compare/v1.4.12...v1.4.13) (2026-02-18)
 
 
