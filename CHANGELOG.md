@@ -1,3 +1,10 @@
+## [1.4.15](https://github.com/JaCraig/request/compare/v1.4.14...v1.4.15) (2026-02-23)
+
+
+### Bug Fixes
+
+* bump tar in the npm_and_yarn group across 1 directory ([7926176](https://github.com/JaCraig/request/commit/7926176cf8f1b94a2e4bf56123bcc2e584f971dc))
+
 ## [1.4.14](https://github.com/JaCraig/request/compare/v1.4.13...v1.4.14) (2026-02-23)
 
 
