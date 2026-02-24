@@ -1,3 +1,10 @@
+## [1.4.16](https://github.com/JaCraig/request/compare/v1.4.15...v1.4.16) (2026-02-24)
+
+
+### Bug Fixes
+
+* bump rollup from 4.57.1 to 4.59.0 ([02f64d2](https://github.com/JaCraig/request/commit/02f64d29a8753eaf4368f4b17bad049751deff0f))
+
 ## [1.4.15](https://github.com/JaCraig/request/compare/v1.4.14...v1.4.15) (2026-02-23)
 
 
