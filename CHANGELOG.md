@@ -1,3 +1,10 @@
+## [1.4.18](https://github.com/JaCraig/request/compare/v1.4.17...v1.4.18) (2026-03-06)
+
+
+### Bug Fixes
+
+* bump serialize-javascript ([d9d73bc](https://github.com/JaCraig/request/commit/d9d73bc631247f6bdbfd559b3f36777d457593aa))
+
 ## [1.4.17](https://github.com/JaCraig/request/compare/v1.4.16...v1.4.17) (2026-03-02)
 
 
