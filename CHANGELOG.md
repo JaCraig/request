@@ -1,3 +1,10 @@
+## [1.4.20](https://github.com/JaCraig/request/compare/v1.4.19...v1.4.20) (2026-03-11)
+
+
+### Bug Fixes
+
+* bump the npm_and_yarn group across 1 directory with 2 updates ([df62772](https://github.com/JaCraig/request/commit/df627720a2af5bd3589efa01af0aa4ae8caacb8c))
+
 ## [1.4.19](https://github.com/JaCraig/request/compare/v1.4.18...v1.4.19) (2026-03-09)
 
 
