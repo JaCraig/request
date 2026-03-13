@@ -1,3 +1,10 @@
+## [1.4.21](https://github.com/JaCraig/request/compare/v1.4.20...v1.4.21) (2026-03-13)
+
+
+### Bug Fixes
+
+* bump undici in the npm_and_yarn group across 1 directory ([6668e8c](https://github.com/JaCraig/request/commit/6668e8cc3a91c89a309c75a063c090479cac53eb))
+
 ## [1.4.20](https://github.com/JaCraig/request/compare/v1.4.19...v1.4.20) (2026-03-11)
 
 
