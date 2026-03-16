@@ -1,3 +1,11 @@
+## [1.4.22](https://github.com/JaCraig/request/compare/v1.4.21...v1.4.22) (2026-03-16)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck from 1.5.15 to 1.5.17 ([6742bd3](https://github.com/JaCraig/request/commit/6742bd37f58d3e93de35a473ed180f543b0ae5e2))
+* bump jest from 30.2.0 to 30.3.0 ([f824b1c](https://github.com/JaCraig/request/commit/f824b1c7f0c25ddfe35b2ebc8af3252a29b20552))
+
 ## [1.4.21](https://github.com/JaCraig/request/compare/v1.4.20...v1.4.21) (2026-03-13)
 
 
