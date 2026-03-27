@@ -1,3 +1,10 @@
+## [1.4.25](https://github.com/JaCraig/request/compare/v1.4.24...v1.4.25) (2026-03-27)
+
+
+### Bug Fixes
+
+* bump handlebars in the npm_and_yarn group across 1 directory ([e1a9fab](https://github.com/JaCraig/request/commit/e1a9fab92264e92c82ae391b49cce7256cf3775c))
+
 ## [1.4.24](https://github.com/JaCraig/request/compare/v1.4.23...v1.4.24) (2026-03-23)
 
 
