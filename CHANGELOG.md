@@ -1,3 +1,17 @@
+# [1.5.0](https://github.com/JaCraig/request/compare/v1.4.25...v1.5.0) (2026-03-28)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck ([2bba992](https://github.com/JaCraig/request/commit/2bba99257524076b76d356c87e1b201389a5a016))
+* **workflows:** update node version and simplify workflows ([41fe6a3](https://github.com/JaCraig/request/commit/41fe6a3e62a5873b3d06244b777285d04d44afce))
+
+
+### Features
+
+* **workflows:** refactor node-publish workflow and update dependencies ([a3111b1](https://github.com/JaCraig/request/commit/a3111b12b519ed93f9d2c328f18214cac9e3ce92))
+* **workflows:** update node version in review-dependabot-pr job ([899fbe3](https://github.com/JaCraig/request/commit/899fbe360cc5a7f3e34b488ac22ec3f04dc1533f))
+
 ## [1.4.25](https://github.com/JaCraig/request/compare/v1.4.24...v1.4.25) (2026-03-27)
 
 
