@@ -11,6 +11,10 @@ env:
   GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPMTOKEN }}
 
+concurrency:
+  group: npm-publish-ci-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write # to be able to publish a GitHub release
   issues: write # to be able to comment on released issues
@@ -19,6 +23,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     strategy:
       matrix:

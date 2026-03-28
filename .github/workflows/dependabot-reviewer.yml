@@ -2,6 +2,10 @@ name: Dependabot Reviewer
 
 on: pull_request_target
 
+concurrency:
+  group: dependabot-review-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
 permissions:
   pull-requests: write
   contents: write
@@ -9,6 +13,7 @@ permissions:
 jobs:
   review-dependabot-pr:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
       - name: Dependabot metadata

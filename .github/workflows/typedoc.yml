@@ -6,6 +6,15 @@ name: Document Site Publish
 on:
   push:
     branches: ["main"]
+    paths:
+      - "README.md"
+      - "src/**"
+      - "package.json"
+      - ".github/workflows/typedoc.yml"
+
+concurrency:
+  group: typedoc-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -13,6 +22,7 @@ permissions:
 jobs:
   publish-docs:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     strategy:
       matrix:

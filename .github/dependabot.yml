@@ -11,6 +11,10 @@ updates:
     interval: "weekly"
   commit-message:
     prefix: "fix"
+  groups:
+    dependencies:
+      patterns:
+        - "*"
 
 - package-ecosystem: "github-actions"
   directory: "/"
