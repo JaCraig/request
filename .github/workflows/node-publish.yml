@@ -19,8 +19,6 @@ permissions:
 jobs:
   review-dependabot-pr:
     uses: JaCraig/Centralized-Workflows/.github/workflows/node-publish.yml@main
-    with:
-      node-version: 26.x
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       NPMTOKEN: ${{ secrets.NPMTOKEN }}

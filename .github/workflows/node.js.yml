@@ -16,5 +16,3 @@ concurrency:
 jobs:
   review-dependabot-pr:
     uses: JaCraig/Centralized-Workflows/.github/workflows/nodejs-test.yml@main
-    with:
-      node-version: 26.x

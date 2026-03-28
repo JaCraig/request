@@ -22,7 +22,5 @@ permissions:
 jobs:
   review-dependabot-pr:
     uses: JaCraig/Centralized-Workflows/.github/workflows/typedoc.yml@main
-    with:
-      node-version: 26.x
     secrets:
       token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
