@@ -22,5 +22,7 @@ permissions:
 jobs:
   review-dependabot-pr:
     uses: JaCraig/Centralized-Workflows/.github/workflows/typedoc.yml@main
+    with:
+      entry-point: "src/Request.ts"
     secrets:
       token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
