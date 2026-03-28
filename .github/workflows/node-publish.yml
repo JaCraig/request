@@ -11,47 +11,14 @@ env:
   GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPMTOKEN }}
 
-concurrency:
-  group: npm-publish-ci-${{ github.ref }}
-  cancel-in-progress: true
-
 permissions:
   contents: write # to be able to publish a GitHub release
   issues: write # to be able to comment on released issues
   pull-requests: write # to be able to comment on released pull requests
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-
-    strategy:
-      matrix:
-        node-version: [24.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          registry-url: "https://registry.npmjs.org/"
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
-          token: ${{ secrets.NPMTOKEN }}
-
-      - run: npm ci
-
-      - run: npm test
-
-      - name: Upload test results
-        uses: actions/upload-artifact@v7
-        with:
-          name: dotnet-results-${{ matrix.node-version }}
-          path: TestResults-${{ matrix.node-version }}
-
-      - name: Update versioning with semantic-release
-        run: npx semantic-release
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMTOKEN }}
+  review-dependabot-pr:
+    uses: JaCraig/Centralized-Workflows/.github/workflows/node-publish.yml@main
+    secrets:
+      PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      NPMTOKEN: ${{ secrets.NPMTOKEN }}

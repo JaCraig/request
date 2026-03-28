@@ -1,14 +1,14 @@
 import { Logger } from "@jacraig/woodchuck";
-import { StorageProvider } from "./StorageProvider";
-import { IndexedDbStorageProvider } from "./IndexedDbStorageProvider";
 import { Cache } from "./Cache";
+import { IndexedDbStorageProvider } from "./IndexedDbStorageProvider";
+import { StorageProvider } from "./StorageProvider";
 
 
 // StorageProviderDictionary is a dictionary of storage providers
 export type StorageProviderDictionary = { [key: string]: Cache } | undefined;
 
 // The globalThis namespace is used to store the storage providers for the cache
-export declare module globalThis {
+export declare namespace globalThis {
     // The StorageProvider dictionary used by the cache to allow multiple storage providers to be used
     var StorageProviders: StorageProviderDictionary;
 }
