@@ -14,27 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    strategy:
-      matrix:
-        node-version: [24.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-      - uses: actions/checkout@v6
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm test
-      - name: Upload test results
-        uses: actions/upload-artifact@v7
-        with:
-          name: dotnet-results-${{ matrix.node-version }}
-          path: TestResults-${{ matrix.node-version }}
+  review-dependabot-pr:
+    uses: JaCraig/Centralized-Workflows/.github/workflows/nodejs-test.yml@main
+    with:
+      node-version: 26.x
