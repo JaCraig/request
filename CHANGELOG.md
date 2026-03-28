@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/JaCraig/request/compare/v1.5.0...v1.5.1) (2026-03-28)
+
+
+### Bug Fixes
+
+* **workflows:** add entry-point for typedoc documentation generation ([4afcd65](https://github.com/JaCraig/request/commit/4afcd654178be95698e9fe04d845da8e72ffb108))
+
 # [1.5.0](https://github.com/JaCraig/request/compare/v1.4.25...v1.5.0) (2026-03-28)
 
 
