@@ -1,3 +1,11 @@
+## [1.5.2](https://github.com/JaCraig/request/compare/v1.5.1...v1.5.2) (2026-04-01)
+
+
+### Bug Fixes
+
+* bump the dependencies group with 3 updates ([622ac1c](https://github.com/JaCraig/request/commit/622ac1c1663260f636e3710163359517900c61f6))
+* **dependencies:** update package versions and adjust TypeScript configuration ([9ea05a1](https://github.com/JaCraig/request/commit/9ea05a1b023c5269f04aa055e34e3a157b710fb9))
+
 ## [1.5.1](https://github.com/JaCraig/request/compare/v1.5.0...v1.5.1) (2026-03-28)
 
 
