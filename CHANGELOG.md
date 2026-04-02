@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/JaCraig/request/compare/v1.5.2...v1.5.3) (2026-04-02)
+
+
+### Bug Fixes
+
+* bump lodash-es from 4.17.23 to 4.18.1 ([9991f02](https://github.com/JaCraig/request/commit/9991f02d4e65e3167e727d242fdb1a83665cd0b0))
+
 ## [1.5.2](https://github.com/JaCraig/request/compare/v1.5.1...v1.5.2) (2026-04-01)
 
 
