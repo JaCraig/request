@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/JaCraig/request/compare/v1.5.4...v1.5.5) (2026-04-08)
+
+
+### Bug Fixes
+
+* bump @jacraig/woodchuck in the dependencies group ([c013576](https://github.com/JaCraig/request/commit/c0135764f5bad7a3af1c9ff63c91b28e866e9541))
+
 ## [1.5.4](https://github.com/JaCraig/request/compare/v1.5.3...v1.5.4) (2026-04-02)
 
 
