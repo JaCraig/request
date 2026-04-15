@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/JaCraig/request/compare/v1.5.5...v1.5.6) (2026-04-15)
+
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([a7976e5](https://github.com/JaCraig/request/commit/a7976e52b80e98b1d566190ece107afeeeaf2146))
+
 ## [1.5.5](https://github.com/JaCraig/request/compare/v1.5.4...v1.5.5) (2026-04-08)
 
 
