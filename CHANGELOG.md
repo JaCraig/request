@@ -1,3 +1,10 @@
+## [1.5.8](https://github.com/JaCraig/request/compare/v1.5.7...v1.5.8) (2026-05-06)
+
+
+### Bug Fixes
+
+* bump rollup from 4.60.2 to 4.60.3 in the dependencies group ([f3fe285](https://github.com/JaCraig/request/commit/f3fe2851c9d0d12afce92c7fcfca47c7a26d1633))
+
 ## [1.5.7](https://github.com/JaCraig/request/compare/v1.5.6...v1.5.7) (2026-04-22)
 
 
