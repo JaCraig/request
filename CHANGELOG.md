@@ -1,3 +1,12 @@
+## [1.5.10](https://github.com/JaCraig/request/compare/v1.5.9...v1.5.10) (2026-05-21)
+
+
+### Bug Fixes
+
+* bump the dependencies group with 3 updates ([d9801df](https://github.com/JaCraig/request/commit/d9801df230c21c08b08848b271cea30f31159af7))
+* **workflow:** remove NPM_TOKEN from environment variables ([44b6fb9](https://github.com/JaCraig/request/commit/44b6fb912bbd98441c034ac2164f39848ac37ad3))
+* **workflow:** remove NPMTOKEN from secrets in node-publish.yml ([2dc429c](https://github.com/JaCraig/request/commit/2dc429c76c738eff679a55b008d88b4daf79dc7c))
+
 ## [1.5.9](https://github.com/JaCraig/request/compare/v1.5.8...v1.5.9) (2026-05-13)
 
 
