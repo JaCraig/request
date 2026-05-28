@@ -1,3 +1,11 @@
+## [1.5.12](https://github.com/JaCraig/request/compare/v1.5.11...v1.5.12) (2026-05-28)
+
+
+### Bug Fixes
+
+* bump the dependencies group across 1 directory with 2 updates ([1430ba9](https://github.com/JaCraig/request/commit/1430ba9307df064750f256009106d882028b5344))
+* **workflow:** remove personal access token from typedoc workflow ([e868dd7](https://github.com/JaCraig/request/commit/e868dd7c15730e3ec5d16b3b518f16a516b2b8e8))
+
 ## [1.5.11](https://github.com/JaCraig/request/compare/v1.5.10...v1.5.11) (2026-05-28)
 
 
