@@ -1,3 +1,10 @@
+## [1.5.11](https://github.com/JaCraig/request/compare/v1.5.10...v1.5.11) (2026-05-28)
+
+
+### Bug Fixes
+
+* **workflow:** remove unnecessary secrets from workflows ([8a79e38](https://github.com/JaCraig/request/commit/8a79e3838d214d22d90e1babb786c034dfd5d395))
+
 ## [1.5.10](https://github.com/JaCraig/request/compare/v1.5.9...v1.5.10) (2026-05-21)
 
 
