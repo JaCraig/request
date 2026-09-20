@@ -1,3 +1,30 @@
+## [1.5.13](https://github.com/JaCraig/request/compare/v1.5.12...v1.5.13) (2026-09-20)
+
+
+### Bug Fixes
+
+* bump @babel/core from 7.29.0 to 7.29.7 ([4061c52](https://github.com/JaCraig/request/commit/4061c52910031b8805c455bfb2b5e3be18ce31f1))
+* bump brace-expansion from 1.1.13 to 1.1.18 ([266319b](https://github.com/JaCraig/request/commit/266319bf8f509ccdf96da06b98672d3df6c8b72e))
+* bump browserslist from 4.28.2 to 4.28.8 ([27468aa](https://github.com/JaCraig/request/commit/27468aad94b645efe665668455467d1ab3821b0c))
+* bump jest from 30.5.0 to 30.5.1 in the dependencies group ([f517b20](https://github.com/JaCraig/request/commit/f517b20dbdd78f04813fb4f8957a124d1d585706))
+* bump js-yaml from 4.1.1 to 4.3.2 ([fee4129](https://github.com/JaCraig/request/commit/fee41299c6752ea37f2d4c83e8bbf34eb4b75c5c))
+* bump markdown-it from 14.1.1 to 14.2.0 ([5a1b70a](https://github.com/JaCraig/request/commit/5a1b70a4354e1805bcfac9760ea1da720f028613))
+* bump rollup from 4.61.1 to 4.62.0 in the dependencies group ([eb284b9](https://github.com/JaCraig/request/commit/eb284b98bc01fb0872075078e7cb47d3a352c84f))
+* bump rollup from 4.62.0 to 4.62.2 in the dependencies group ([9e3ff86](https://github.com/JaCraig/request/commit/9e3ff86f3f7fec3d4b57ba37f3a856952a391698))
+* bump rollup from 4.62.3 to 4.62.4 in the dependencies group ([6c70295](https://github.com/JaCraig/request/commit/6c70295fa1de607a91a186867b342853e4c404e0))
+* bump rollup from 4.62.4 to 4.62.5 in the dependencies group ([cdf9ffd](https://github.com/JaCraig/request/commit/cdf9ffdbd8bf012e546f420c32ff0c97a9d8be80))
+* bump rollup from 4.63.1 to 4.63.2 in the dependencies group ([5314405](https://github.com/JaCraig/request/commit/53144054a9a2125e0191c4ea9495c37e74a6598c))
+* bump semantic-release in the dependencies group ([5639bc4](https://github.com/JaCraig/request/commit/5639bc4a58227c7c0944f2afa6e794603ce805b0))
+* bump the dependencies group with 2 updates ([7c7b87a](https://github.com/JaCraig/request/commit/7c7b87aedc213103e9d356e140ac45a36bc9b4fe))
+* bump the dependencies group with 2 updates ([1b1a5f3](https://github.com/JaCraig/request/commit/1b1a5f327348e435c295340aa791b4fe56924db7))
+* bump the dependencies group with 2 updates ([7191eda](https://github.com/JaCraig/request/commit/7191eda1844058c5be3e043d5172e33c1769ddac))
+* bump the dependencies group with 2 updates ([2113a82](https://github.com/JaCraig/request/commit/2113a8226e0f049743545671317984166cbcef38))
+* bump the dependencies group with 3 updates ([fc9c410](https://github.com/JaCraig/request/commit/fc9c41019694f057b9cfe83b2424a227ddc022cd))
+* bump the dependencies group with 3 updates ([1d86fff](https://github.com/JaCraig/request/commit/1d86fff2f7750590883d0118b576b5f13ce68768))
+* bump the dependencies group with 4 updates ([699d4a8](https://github.com/JaCraig/request/commit/699d4a85d7ba8954759ad996fc0fc75f7decdeed))
+* bump undici from 6.24.1 to 6.27.0 ([c1e93ce](https://github.com/JaCraig/request/commit/c1e93ce9185718e18a7aaa1b54a6e7ff57604e05))
+* bump undici from 6.27.0 to 6.28.0 ([3110c0e](https://github.com/JaCraig/request/commit/3110c0e692ccf75475538084b58c7209de50dc1c))
+
 ## [1.5.12](https://github.com/JaCraig/request/compare/v1.5.11...v1.5.12) (2026-05-28)
 
 
