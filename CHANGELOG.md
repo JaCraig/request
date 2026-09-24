@@ -1,3 +1,11 @@
+## [1.5.14](https://github.com/JaCraig/request/compare/v1.5.13...v1.5.14) (2026-09-24)
+
+
+### Bug Fixes
+
+* bump typescript from 6.0.3 to 7.0.2 in the dependencies group ([e9c631a](https://github.com/JaCraig/request/commit/e9c631a391a4750e4903fad1b9edef1ee11b2d0e))
+* **dependencies:** pin TypeScript to 6.0.3 ([b92b4ba](https://github.com/JaCraig/request/commit/b92b4ba08790b8968bf07dac20b3023b6b86c3e6))
+
 ## [1.5.13](https://github.com/JaCraig/request/compare/v1.5.12...v1.5.13) (2026-09-20)
 
 
