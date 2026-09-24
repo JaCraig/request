@@ -15,7 +15,7 @@
 </div></section>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">RequestOptions</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#authenticationprovider">authenticationProvider</a><span class="tsd-signature-symbol">?:</span> <a href="AuthenticationProvider.html" class="tsd-signature-type tsd-kind-interface">AuthenticationProvider</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#cache">cache</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#cachekey">cacheKey</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#cancellationtoken">cancellationToken</a><span class="tsd-signature-symbol">?:</span> <a href="../classes/CancellationToken.html" class="tsd-signature-type tsd-kind-class">CancellationToken</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#credentials">credentials</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">RequestCredentials</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#data">data</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#error">error</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">reason</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#headers">headers</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#method">method</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#parser">parser</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#retry">retry</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">attempt</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#retryattempts">retryAttempts</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#retrydelay">retryDelay</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#serializer">serializer</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#storagemode">storageMode</a><span class="tsd-signature-symbol">?:</span> <a href="../enums/StorageMode.html" class="tsd-signature-type tsd-kind-enum">StorageMode</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#success">success</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#timeout">timeout</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#url">url</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L37">Request.ts:37</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L37">Request.ts:37</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -51,126 +51,126 @@
 <div class="tsd-comment tsd-typography"><p>Authentication provider (default: null)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L39">Request.ts:39</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L39">Request.ts:39</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="cache"><code class="tsd-tag">Optional</code><span>cache</span><a href="#cache" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">cache</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Cache name (default: &quot;Default&quot;)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L41">Request.ts:41</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L41">Request.ts:41</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="cachekey"><code class="tsd-tag">Optional</code><span>cache<wbr/>Key</span><a href="#cachekey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">cacheKey</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Cache key (default: url + JSON.stringify(data))</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L43">Request.ts:43</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L43">Request.ts:43</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="cancellationtoken"><code class="tsd-tag">Optional</code><span>cancellation<wbr/>Token</span><a href="#cancellationtoken" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">cancellationToken</span><span class="tsd-signature-symbol">?:</span> <a href="../classes/CancellationToken.html" class="tsd-signature-type tsd-kind-class">CancellationToken</a></div>
 <div class="tsd-comment tsd-typography"><p>Request cancellation token (default: null)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L45">Request.ts:45</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L45">Request.ts:45</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="credentials"><code class="tsd-tag">Optional</code><span>credentials</span><a href="#credentials" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">credentials</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">RequestCredentials</span></div>
 <div class="tsd-comment tsd-typography"><p>Request credentials (default: same-origin)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L47">Request.ts:47</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L47">Request.ts:47</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="data"><code class="tsd-tag">Optional</code><span>data</span><a href="#data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">data</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">any</span></div>
 <div class="tsd-comment tsd-typography"><p>Request data</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L49">Request.ts:49</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L49">Request.ts:49</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="error"><code class="tsd-tag">Optional</code><span>error</span><a href="#error" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">error</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">reason</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-comment tsd-typography"><p>Request error callback (default: Logger.error)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L51">Request.ts:51</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L51">Request.ts:51</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="headers"><code class="tsd-tag">Optional</code><span>headers</span><a href="#headers" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">headers</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 <div class="tsd-comment tsd-typography"><p>Request headers (default: {})</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L53">Request.ts:53</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L53">Request.ts:53</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="method"><span>method</span><a href="#method" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">method</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Request method (default: GET)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L55">Request.ts:55</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L55">Request.ts:55</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="parser"><code class="tsd-tag">Optional</code><span>parser</span><a href="#parser" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">parser</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 <div class="tsd-comment tsd-typography"><p>Request parser (default: response.json())</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L57">Request.ts:57</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L57">Request.ts:57</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="retry"><code class="tsd-tag">Optional</code><span>retry</span><a href="#retry" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">retry</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">attempt</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-comment tsd-typography"><p>Request retry callback (default: Logger.debug)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L59">Request.ts:59</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L59">Request.ts:59</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="retryattempts"><code class="tsd-tag">Optional</code><span>retry<wbr/>Attempts</span><a href="#retryattempts" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">retryAttempts</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Retry attempts (default: 3)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L61">Request.ts:61</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L61">Request.ts:61</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="retrydelay"><code class="tsd-tag">Optional</code><span>retry<wbr/>Delay</span><a href="#retrydelay" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">retryDelay</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Retry delay in milliseconds (default: 1000)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L63">Request.ts:63</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L63">Request.ts:63</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="serializer"><code class="tsd-tag">Optional</code><span>serializer</span><a href="#serializer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">serializer</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Request serializer (default: JSON.stringify)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L65">Request.ts:65</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L65">Request.ts:65</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="storagemode"><code class="tsd-tag">Optional</code><span>storage<wbr/>Mode</span><a href="#storagemode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">storageMode</span><span class="tsd-signature-symbol">?:</span> <a href="../enums/StorageMode.html" class="tsd-signature-type tsd-kind-enum">StorageMode</a></div>
 <div class="tsd-comment tsd-typography"><p>Storage mode (default: StorageMode.NetworkFirst)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L67">Request.ts:67</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L67">Request.ts:67</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="success"><code class="tsd-tag">Optional</code><span>success</span><a href="#success" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">success</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-comment tsd-typography"><p>Request success callback (default: Logger.debug)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L69">Request.ts:69</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L69">Request.ts:69</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="timeout"><code class="tsd-tag">Optional</code><span>timeout</span><a href="#timeout" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">timeout</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Timeout in milliseconds (default: 60000)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L71">Request.ts:71</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L71">Request.ts:71</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="url"><span>url</span><a href="#url" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Request url (default: &quot;&quot;)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/JaCraig/request/blob/de7a5d8600147676e181229516a939735f3ba149/src/Request.ts#L73">Request.ts:73</a></li></ul></aside></section></section></details></div>
+<li>Defined in <a href="https://github.com/JaCraig/request/blob/b92b4ba08790b8968bf07dac20b3023b6b86c3e6/src/Request.ts#L73">Request.ts:73</a></li></ul></aside></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
