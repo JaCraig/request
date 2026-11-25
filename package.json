@@ -60,7 +60,7 @@
     "jest": "^30.5.2",
     "jest-fetch-mock": "^4.2.0",
     "rollup": "^4.63.4",
-    "semantic-release": "^25.0.9",
+    "semantic-release": "^26.0.1",
     "ts-jest": "^29.4.12",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.2",
